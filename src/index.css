@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-gold: #D4AF37;
+    --brand-gold-glow: rgba(212, 175, 55, 0.35);
+    --surface-obsidian: #0C0C0E;
+    --surface-card: #16161A;
+    --surface-elevated: #222228;
+  }
+
+  body {
+    background-color: #0C0C0E;
+    color: #F4F4F6;
+    font-family: 'Outfit', sans-serif;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .font-gauge {
+    font-family: 'Rajdhani', monospace, sans-serif;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0C0C0E;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.5);
+}
+
+/* Glass and luxury neon gold effects */
+.gold-glow {
+  box-shadow: 0 0 25px -5px rgba(212, 175, 55, 0.35);
+}
+
+.gold-glow-subtle {
+  box-shadow: 0 0 15px -3px rgba(212, 175, 55, 0.18);
+}
+
+.gold-border-glow {
+  border-color: #D4AF37;
+  box-shadow: inset 0 0 12px rgba(212, 175, 55, 0.15), 0 0 15px rgba(212, 175, 55, 0.25);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF0B3 0%, #D4AF37 50%, #AA820A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-button {
+  background: linear-gradient(135deg, #E6C86E 0%, #D4AF37 60%, #AA820A 100%);
+}
+
+.gold-gradient-button:hover {
+  background: linear-gradient(135deg, #F3DA8E 0%, #DEC052 60%, #B88E12 100%);
+}
+
+/* Carbon weave subtle pattern */
+.carbon-pattern {
+  background-color: #121215;
+  background-image: 
+    linear-gradient(45deg, rgba(255, 255, 255, 0.02) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.02) 75%, rgba(255, 255, 255, 0.02)),
+    linear-gradient(45deg, rgba(255, 255, 255, 0.02) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.02) 75%, rgba(255, 255, 255, 0.02));
+  background-size: 8px 8px;
+  background-position: 0 0, 4px 4px;
+}

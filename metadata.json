@@ -1,0 +1,6 @@
+{
+  "name": "Car Quiz Challenge",
+  "description": "A cinematic, high-octane automotive quiz arena draped in deep obsidian and burnished gold with 8 interactive screens, speed timer, sound effects, and admin panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
